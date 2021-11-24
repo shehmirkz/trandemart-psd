@@ -112,7 +112,7 @@ nav {
 
 
 .middle-section {
-    padding: 100px 0;
+    padding: 0 0 100px 0;
 }
 
 .men-section, .women-section{
@@ -172,6 +172,7 @@ nav {
 .product-ul {
     list-style: none;
     display: flex;
+    margin-bottom: 68px;
 }
 
 .product-ul, li {
@@ -365,6 +366,64 @@ footer p:hover {
 }
 
 /* Footer Section Styling Ends Here */
+
+
+
+/* external css: flickity.css */
+
+.girl-img {
+    position: relative;
+    bottom: 200px !important;
+}
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: transparent;
+}
+
+.carousel-cell {
+  width: 100%;
+  /* height: 100%; */
+  margin-right: 10px;
+  background: transparent;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+  opacity: 0.1;
+}
+
+.all-button, .men-button, .woman-button, .top-up-button {
+    background-color: transparent !important;
+    color: #343b5e !important;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+
+.all-button:hover {
+    border-bottom: 3px solid #e19500 !important;
+}
+.men-button:hover {
+    border-bottom: 3px solid #e19500 !important;
+}
+.woman-button:hover {
+    border-bottom: 3px solid #e19500 !important;
+}
+.top-up-button:hover {
+    border-bottom: 3px solid #e19500 !important;
+}
 
 
 
