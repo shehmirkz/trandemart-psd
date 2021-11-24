@@ -399,7 +399,7 @@ body { font-family: sans-serif; }
 
 /* Extra Large Screens */
 /* Large desktops and laptops */
-@media (min-width: 1300px) and (max-width: 1651px ) {
+@media (min-width: 1300px) and (max-width: 1652px ) {
     nav {
         padding: 0;
     }
@@ -417,8 +417,8 @@ body { font-family: sans-serif; }
 
     .back-image {
         position: absolute;
-        bottom: -248px;
-        right: 51px;
+        bottom: -203px;
+        left: -87px;
     }
     .middle-section {
         padding: 0px 0;
@@ -812,5 +812,13 @@ body { font-family: sans-serif; }
     }
     .navbar-brand {
         max-width: 215px;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: center !important;
+        padding-top: 50px !important;
     }
 }
