@@ -397,6 +397,45 @@ body { font-family: sans-serif; }
 ////////////////////////////////////////Media Query For Responsive//////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+/* Extra Large Screens */
+/* Large desktops and laptops */
+@media (min-width: 1300px) and (max-width: 1651px ) {
+    nav {
+        padding: 0;
+    }
+
+    .middle-nav {
+        margin-left: 0;
+    }
+    .middle-nav {
+        margin-left: 0;
+    }
+
+    .middle-nav li {
+        margin-right: 30px;
+    }
+
+    .back-image {
+        position: absolute;
+        bottom: -248px;
+        right: 51px;
+    }
+    .middle-section {
+        padding: 0px 0;
+    }
+
+    .men-section, .women-section {
+        margin-left: 215px;
+        background: url(./images/background-text.png) no-repeat;
+        width: auto;
+    }
+
+    .design-back {
+        bottom: 17px;
+    }
+}
+
+
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) and (max-width: 1300px ) {
