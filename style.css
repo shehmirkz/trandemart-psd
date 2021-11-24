@@ -659,8 +659,8 @@ body { font-family: sans-serif; }
 
     .men-section, .women-section {
         margin-left: 0;
-        background: url(./images/background-text.png) no-repeat;
         width: auto;
+        background-size: contain;
     }
     .design {
         padding: 0;
@@ -681,11 +681,11 @@ body { font-family: sans-serif; }
     }
     .collection-button {
         position: relative;
-        top: -112px;
+        top: -63px;
         bottom: 0;
-        left: 36px;
+        left: 102px;
         right: 0;
-        padding: 5px 32px !important;
+        padding: 1px 32px !important;
     }
 
     .middle-sec-text {
@@ -711,12 +711,11 @@ body { font-family: sans-serif; }
         padding: 27px 0;
     }
     .signup-heading {
-        font-size: 3rem;
+        font-size: 2.3rem;
         padding-top: 35px;
     }
     footer {
         padding: 42px 0 15px 0;
-        text-align: center;
     }
     .footer-yellow {
         text-align: center;
@@ -736,6 +735,24 @@ body { font-family: sans-serif; }
     .navbar-light .navbar-nav .nav-link {
         color: rgba(0,0,0,.55);
         margin-bottom: 20px !important;
+    }
+    .card-image {
+        width: 100% !important;
+    }
+
+    .design-background {
+        position: relative;
+        padding-top: 20px;
+        background-size: contain;
+    }
+    .collection-image {
+        max-width: 100%;
+    }
+    .footer-titles, p {
+        margin-bottom: 0 !important;
+    }
+    .fotter-last-p {
+        padding-bottom: 30px;
     }
 
 }
