@@ -754,5 +754,15 @@ body { font-family: sans-serif; }
     .fotter-last-p {
         padding-bottom: 30px;
     }
+    .sign-up-icons {
+        width: 18%;
+        display: flex;
+        flex-direction: row;
+    }
+    .signup-title {
+        position: relative;
+        bottom: 52px;
+        left: 8px;
+    }
 
 }
