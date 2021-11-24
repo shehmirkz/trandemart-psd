@@ -647,6 +647,9 @@ body { font-family: sans-serif; }
     .outer-image {
         display: none;
     }
+    .product-title {
+        font-size: 28px;
+    }
    
 
 
@@ -777,6 +780,7 @@ body { font-family: sans-serif; }
     }
     .card-image {
         width: 100% !important;
+        margin-top: 40px;
     }
 
     .design-background {
@@ -803,5 +807,10 @@ body { font-family: sans-serif; }
         bottom: 52px;
         left: 8px;
     }
-
+    .product-title {
+        font-size: 28px;
+    }
+    .navbar-brand {
+        max-width: 215px;
+    }
 }
