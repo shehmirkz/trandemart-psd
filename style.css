@@ -817,7 +817,7 @@ body { font-family: sans-serif; }
     .navbar-nav {
         display: flex;
         flex-direction: row !important;
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
         justify-content: center !important;
         padding-top: 50px !important;
     }
