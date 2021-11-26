@@ -1,7 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
 body {font-family: 'Quicksand', sans-serif;}
-.nav-link {cursor: pointer;}
-.nav-link:hover {border-bottom: 3px solid #e19a00; margin-bottom: 5px;}
+.nav-link {cursor: pointer; position: relative;}
+
+.nav-link:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 73%;
+    height: 3px;
+}
+.nav-link:hover:before {
+    border-bottom: 3px solid #e19500;
+}
+.right-nav {
+    margin-right: 20px;
+}
+.right-nav a {
+    cursor: pointer;
+    position: relative;
+}
+.right-nav a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: 3px;
+}
+.right-nav a:hover::before {
+    border-bottom: 3px solid #e19500;
+}
+
+.right-nav a {
+    text-decoration: none;
+    list-style: none;
+    color: gray;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+
 
 /* Middle Nav Styling End Here */
 .banner-img {background: url(./images/banner.png) no-repeat; height: 100%; width: 100%;}
@@ -28,9 +65,19 @@ body {font-family: 'Quicksand', sans-serif;}
 
 /* Middle Section Styling Starts Here */
 .middle-section {padding: 0 0 75px 0;}
-.middle-section h1 {font-family: 'Quicksand', sans-serif; font-weight: 700; padding-top: 35px; color: #343b5e !important;}
-.middle-section p {margin-top: 50px; padding-bottom: 50px;}
-.middle-section button {margin-top: 35px; padding: 4px 30px !important;}
+.middle-section h1 {
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 700; 
+    padding-top: 35px; 
+    color: #343b5e !important;
+    padding-right: 312px;
+}
+.middle-section p {margin-top: 50px; padding: 0 320px 50px 0;}
+.middle-section button {
+    margin-top: 35px; 
+    padding: 0 0px 0 43px !important;
+    color: #fff !important;
+}
 .men-section, .women-section{ margin-left: 65px; background: url(./images/background-text.png) no-repeat; width: 100%; z-index: 99; position: relative;}
 .back-image {position: absolute; bottom: -92px;}
 .tabs-line {border-right: 2px solid rgb(87, 85, 85); height: 41%; position: relative; top: 13px;}
@@ -40,11 +87,14 @@ body {font-family: 'Quicksand', sans-serif;}
 .products {background-color: #f3fbfe; padding: 50px 0; position: relative;}
 .products h2 {color: #343b5e;}
 .products p {color: #878787;}
-.products-container h6 {font-family: 'Quicksand', sans-serif; font-weight: 700; color: #e19500; padding-bottom: 10px; padding-top: 16px;}
+.products-container h6 {font-family: 'Quicksand', sans-serif; font-weight: 700; color: #e19500;
+    padding-bottom: 9px;
+    padding-top: 28px;
+    }
 .products-container h3 {color: #343b5e; font-family: 'Quicksand', sans-serif; font-weight: 700;}
 .products-container p {color: gray; font-family: 'Quicksand', sans-serif; font-weight: 700;}
 .outer-image {position: absolute; right: 35px; bottom: 382px; width: 15%;}
-.view-all {padding: 160px 0 0 0; color: #99cc34 !important; position: relative;}
+.view-all {padding: 100px 0 0 0; color: #99cc34 !important; position: relative;}
 .right-open {position: absolute; bottom: -4px;}
 /* Product Section Styling Ends Here */
 
@@ -52,15 +102,27 @@ body {font-family: 'Quicksand', sans-serif;}
 .design { position: relative; padding: 100px 0;}
 .design-background {background: url(./images/background-text.png) no-repeat; width: 100%; z-index: 99; position: relative; padding-top: 88px; background-size: contain;}
 .design h1 {color: #343b5e; font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 57px;}
+.design h6 {
+    color: #343b5e;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.middle-button {
+    padding: 2px 0px 2px 49px;
+    margin-top: 34px;
+}
 .design p {color: #626368; font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 14px;}
 .design-back {position: absolute; bottom: 163px; width: 35%;}
 /* Design Section Styling Ends Here */
 
 /* Collection Section Styling Starts Here */
 .collection h1, p {color: #343b5e; font-family: 'Quicksand', sans-serif; font-weight: 700;}
+.collection p {
+    padding-bottom: 30px;
+}
 .container-fluid {overflow: hidden;}
 .collection-cards {position: relative;}
-.collection-cards button {position: relative;top: -112px;bottom: 0;left: 198px;right: 0;padding: 7px 32px !important;}
+.collection-cards button {position: relative;top: -112px;bottom: 0;left: 198px;right: 0;padding: 2px 2px 2px 46px; color: #fff !important;}
 /* Collection Section Styling Ends Here */
 
 /* Sign Up Section Styling Starts Here */
@@ -94,20 +156,62 @@ body { font-family: sans-serif; }
 /* cell number */
 .carousel-cell:before {display: block;text-align: center;content: counter(gallery-cell);line-height: 100px;font-size: 80px;color: white;opacity: 0.1;}
 .all-button, .men-button, .woman-button, .top-up-button {background-color: transparent !important;color: #343b5e !important;cursor: pointer;margin-bottom: 50px;}
-.all-button:hover {border-bottom: 3px solid #e19500 !important;}
-.men-button:hover {border-bottom: 3px solid #e19500 !important;}
-.woman-button:hover {border-bottom: 3px solid #e19500 !important;}
-.top-up-button:hover {border-bottom: 3px solid #e19500 !important;}
+/* .all-button:hover {border-bottom: 3px solid #e19500 !important;} */
+/* .men-button:hover {border-bottom: 3px solid #e19500 !important;} */
+/* .woman-button:hover {border-bottom: 3px solid #e19500 !important;} */
+/* .top-up-button:hover {border-bottom: 3px solid #e19500 !important;} */
 
 
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////Media Query For Responsive//////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (min-width: 1470px) and (max-width: 1900px) {
+    .design-back {
+        position: absolute;
+        bottom: 163px;
+        width: 26%;
+    }
+    .outer-image {
+        width: 11%;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1470px) {
+    .design-back {
+        position: absolute;
+        bottom: -46px;
+        width: 76%;
+    }
+    .center-nav {
+        margin-left: 70px !important;
+    }
+    .right-nav {
+        margin-top: 20px;
+        padding-right: 15px;
+    }
+    .collection-cards button {
+        padding: 2px 2px 2px 38px !important;
+    }
+    .outer-image {
+        width: 11%;
+    }
+}
+
+
 /* Extra Large Screens */
-@media (min-width: 1300px) and (max-width: 1652px) {
-    .back-image {position: absolute;bottom: -52px;left: -99px;}
-    .middle-section button {margin-top: 0px;padding: 3px 30px !important;margin-bottom: 40px;}
+@media (min-width: 1301px) and (max-width: 1652px) {
+    .back-image {
+        position: absolute;
+        bottom: -38px;
+        width: 79%;
+    }
+    .middle-section button {
+        margin-top: 0px;
+        padding: 2px 0px 2px 38px !important;
+        margin-bottom: 40px;
+    }
     .men-section, .women-section {width: 91%;position: relative;background-size: contain;}
     .outer-image {display: none !important;}
     .design {padding: 60px 0; margin: 0 0  0 120px;}
@@ -118,14 +222,27 @@ body { font-family: sans-serif; }
     .design .design-imgs {width: 75%;}
     .design-back {position: absolute;bottom: 26px;left: -149px;width: 36% !important;}
     .design p {color: #626368;font-family: 'Quicksand', sans-serif;font-weight: 700;font-size: 13px;line-height: 24px;margin-bottom: 0px;}
-    .middle-button {margin-top: 48px;}
+    .middle-button {
+        margin-top: 48px;
+        padding: 2px 0px 2px 40px !important;
+    }
     .collection-cards button {position: relative;top: -60px;bottom: 0;left: 116px;right: 0;padding: 2px 32px !important;}
     .input-group {padding: 0px 181px;}
+    .collection-cards button {
+        padding: 2px 2px 2px 38px !important;
+    }
+    .outer-image {
+        width: 11%;
+    }
 }
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) and (max-width: 1300px) {
-    .back-image {position: absolute;bottom: -216px;left: -99px;}
+    .back-image {
+        position: absolute;
+        bottom: -144px;
+        width: 87%;
+    }
     .middle-section button {margin-top: 0px;padding: 3px 30px !important;margin-bottom: 40px;}
     .banner-right {padding-top: 0 !important;}
     .banner-right p {margin: 22px 0;}
@@ -135,14 +252,30 @@ body { font-family: sans-serif; }
     .collection-cards button {position: relative;top: -60px;bottom: 0;left: 116px;right: 0;padding: 2px 32px !important;}
     .input-group {padding: 0px 181px;}
     .design .design-imgs {width: 75%;}
+    .design-back {
+        bottom: 255px;
+        width: 24%;
+    }
+    .right-nav a {
+        text-decoration: none;
+        list-style: none;
+        color: gray;
+        padding-right: 10px;
+        padding-right: 24px;
+
+    }
 }
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1200px) {
-    .back-image {position: absolute;bottom: -61px;left: -9px;}
-    .middle-section button {margin-top: 0px;padding: 3px 30px !important;margin-bottom: 40px;}
+    .back-image {position: absolute;bottom: -32px;left: -50px;}
+    .middle-section button {margin-top: 0px;padding: 3px 30px !important;margin-bottom: 40px; color: #343b5e !important;}
     .banner-right {padding-top: 0 !important;}
-    .banner-right p {margin: 22px 0;}
+    .banner-right p {
+        margin: 50px 0;
+        padding-right: 93px;
+        padding-bottom: 50px;
+    }
     .view-all {padding: 92px 0 0 0;}
     .outer-image {display: none !important;}
     .collection img {max-width: 100%;}
@@ -153,31 +286,79 @@ body { font-family: sans-serif; }
     .design-background {background: url(./images/background-text.png) no-repeat;width: 100%;z-index: 99;position: relative;padding-top: 12px;background-size: contain;padding-left: 50px;}
     .signup-heading {padding-top: 85px;}
     .design-back {display: none;}
+    .design {
+        position: relative;
+        padding: 30px 0;
+    }
     .men-section, .women-section {margin-left: 12px;background: url(./images/background-text.png) no-repeat;width: 97%;z-index: 99;position: relative;background-size: contain;}
     .view-all {padding: 67px 0 0 0;color: #99cc34 !important;position: relative;}
     .center-nav {margin-left: 0 !important;}
     .nav-item a {margin-left: 0px !important;}
+    .flickity-slider {
+        left: -199px;
+    }
+    .banner-side-img {
+        display: none;
+    }
+    .middle-section h1 {
+        padding-top: 0;
+        padding-right: 257px;
+    }
+    .middle-section p {
+        margin-top: 26px;
+        padding: 0 204px 50px 0;
+    }
+    .design p {
+        margin-bottom: 0 !important;
+    }
+    .collection h1, p {
+        padding-top: 20px;
+    }
+    footer p {
+        padding-top: 0 !important;
+    }
+    footer {
+        padding: 58px 0 15px 0;
+    }
+
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 992px) {
-    .back-image {position: absolute;bottom: -61px;left: -9px;}
-    .middle-section button {margin-top: 0px;padding: 1px 15px !important;margin-bottom: 25px;}
+    .back-image {
+        bottom: 11px;
+        left: 33px;
+    }
+    
+    .middle-section button {margin-top: 0px;padding: 1px 15px !important;margin-bottom: 45px;}
     .banner-right {padding-top: 0 !important;}
     .outer-image {display: none !important;}
     .collection img {max-width: 100%;}
-    .collection-cards button {position: relative;top: -46px;bottom: 0;left: 49px;right: 0;padding: 0px 8px !important;}
+    .collection-cards button {position: relative;top: -46px;bottom: 0;left: 104px;right: 0; padding: 1px 0 1px 30px !important;}
+    .collection-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
     .men-section, .women-section {margin-left: 12px;background: url(./images/background-text.png) no-repeat;width: 97%;z-index: 99;position: relative;background-size: contain;}
     .view-all {padding: 67px 0 0 0;color: #99cc34 !important;position: relative;}
     .center-nav {margin-left: 0 !important;}
     .nav-item a {margin-left: 0px !important;}
     .banner-right h6 {padding-bottom: 0;}
     .banner-right p {padding-right: 14px;padding-bottom: 25px;}
-    .flickity-viewport {height: 541px !important;}
+    .flickity-viewport {height: 530px !important;}
     .banner-right h1 {font-size: 37px;}
     .middle-section {padding: 34px 0 0 0;}
-    .middle-section p {margin-top: 17px;padding-bottom: 30px;font-size: 14px;}
-    .middle-section h1 {padding-top: 0;}
+    .middle-section p {
+        margin-top: 23px;
+        padding: 0 76px 22px 0;
+    }
+    .middle-section h1 {
+        padding-right: 85px;
+        padding-top: 0 !important;
+    }
+
     .design {padding: 29px 0;}
     .design-background {background: url(./images/background-text.png) no-repeat;width: 92%;z-index: 99;position: relative;padding-top: 19px;background-size: contain;}
     .design-background button {margin-top: 28px;}
@@ -186,7 +367,7 @@ body { font-family: sans-serif; }
     .design p {font-size: 15px;margin-bottom: 0 !important;line-height: 21px;}
     .man-imgs {height: 92% !important;}
     .collection h1, p {margin-top: 50px;}
-    footer p {line-height: 20px;}
+    footer p {line-height: 18px;}
     footer h2 {padding-bottom: 20px;}
     .design-back {display: none;}
     .input-group {padding: 0 90px;}
@@ -194,7 +375,23 @@ body { font-family: sans-serif; }
     .navbar-nav {display: flex;flex-direction: column;padding-left: 0;margin-bottom: 0;list-style: none;justify-content: start;align-items: start;margin-left: 25px;}
     .girl-img {position: relative;bottom: 1px !important;width: 100%;}
     .design {position: relative;padding: 29px 0;}
-    .signup-heading {padding-top: 47px;}
+    .signup-heading {padding-top: 47px; font-size: 3rem;}
+    .middle-button {
+        padding: 2px 0px 2px 49px !important;
+    }
+    .right-nav a {
+        padding-right: 0;
+        font-size: 18px;
+        display: flex;
+        margin-left: 22px;
+        padding-bottom: 18px;
+    }
+    .carousel-cell:before {
+        line-height: 36px !important;
+    }
+    footer {
+        padding: 41px 0 15px 0;
+    }
 }
 
 /* Landscape phones and portrait tablets */
@@ -235,7 +432,7 @@ body { font-family: sans-serif; }
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
     .back-image {display: none;}
-    .middle-section button {margin-top: 0px;padding: 3px 30px !important;margin-bottom: 7px;margin-top: 37px;}
+    .middle-section button {margin-top: 0px;padding: 3px 30px !important;margin-bottom: 7px;margin-top: 37px; color: #343b5e !important;}
     .banner-right {padding-top: 0 !important;}
     .mono-imgs {width: 100%;margin: 0;padding: 0;}
     .navbar-brand {width: 50%;}
@@ -256,8 +453,9 @@ body { font-family: sans-serif; }
     .girl-img {display: none;}
     .shop-button {position: relative;padding: 7px 38px !important;margin: 9px 7px;cursor: pointer;}
     .banner-side-img {display: none;}
-    .middle-section h1 {padding-top: 5px;}
-    .middle-section p {margin-top: 37px;line-height: 22px;padding-bottom: 0;}
+    .middle-section h1 {padding-top: 5px; padding-right: 0 !important;}
+    .middle-section p {margin-top: 37px;line-height: 22px;padding: 0 10px 0px 0;}
+    
     .img-fluid {max-width: 100%;height: auto;width: 100%;}
     .products-container h6 {font-family: 'Quicksand', sans-serif;font-weight: 700;color: #e19500;padding-bottom: 5px;padding-top: 18px;}
     .design {position: relative;padding: 36px 0;}
@@ -286,4 +484,7 @@ body { font-family: sans-serif; }
     .products {padding: 26px 0;}
     .footer-line {text-align: center;}
     .nav-pills .nav-link {padding: .5rem 0.7rem !important;}
+    .all-button, .men-button, .woman-button, .top-up-button {
+        margin-bottom: 8px;
+    }
 }
