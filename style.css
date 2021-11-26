@@ -320,6 +320,10 @@ body { font-family: sans-serif; }
     footer {
         padding: 58px 0 15px 0;
     }
+    .right-nav {
+        margin-right: 20px;
+        margin-top: 21px;
+    }
 
 }
 
@@ -396,51 +400,108 @@ body { font-family: sans-serif; }
 
 /* Landscape phones and portrait tablets */
 @media (min-width: 480px) and (max-width: 768px) {
-    .back-image {position: absolute;bottom: -61px;left: -9px;}
-    .middle-section button {margin-top: 0px;padding: 1px 15px !important;margin-bottom: 25px;}
+    .back-image {
+        position: absolute;
+        bottom: 23px;
+        left: 148px;
+    }
+    .middle-section button {margin-top: 0px;padding: 1px 15px !important;margin-bottom: 25px; color: #343b5e !important;}
     .banner-right {padding-top: 0 !important;}
     .outer-image {display: none !important;}
     .collection img {max-width: 100%;}
-    .collection-cards button {position: relative;top: -46px;bottom: 0;left: 49px;right: 0;padding: 0px 8px !important;}
+    .collection-cards button {position: relative;top: -46px;bottom: 0;left: 49px;right: 0;padding: 1px 0 1px 40px !important;}
     .men-section, .women-section {margin-left: 12px;background: url(./images/background-text.png) no-repeat;width: 97%;z-index: 99;position: relative;background-size: contain;}
     .view-all {padding: 67px 0 0 0;color: #99cc34 !important;position: relative;}
     .center-nav {margin-left: 0 !important;}
     .nav-item a {margin-left: 0px !important;}
-    .banner-right h6 {padding-bottom: 0;}
-    .banner-right p {padding-right: 14px;padding-bottom: 25px;}
+    .banner-right h6 {padding-bottom: 0; padding-top: 20px;}
+    .banner-right p {
+        padding-right: 14px;
+        padding-bottom: 25px;
+        margin: 12px 0;
+        font: 14px;
+    }
     .flickity-viewport {height: 541px !important;}
-    .banner-right h1 {font-size: 37px;}
+    .banner-right h1 {font-size: 23px;}
     .middle-section {padding: 34px 0 0 0;}
-    .middle-section p {margin-top: 17px;padding-bottom: 30px;font-size: 14px;}
-    .middle-section h1 {padding-top: 0;}
+    .middle-section p {margin-top: 17px;font-size: 14px; padding: 0 74px 30px 0;}
+    .middle-section h1 {padding-top: 0; padding-right: 52px;}
+
     .design-background {background: url(./images/background-text.png) no-repeat;width: 92%;z-index: 99;position: relative;padding-top: 19px;background-size: contain;}
-    .design-background button {margin-top: 28px;}
+    .design-background button {
+        margin-top: 28px;
+        margin-bottom: 30px;
+        padding: 1px 0 1px 40px;
+    }
     .design h1 {font-size: 35px;}
     .design-imgs {width: 100%;}
-    .design p {font-size: 12px;margin-bottom: 0 !important;line-height: 29px;}
+    .design p {font-size: 14px;margin-bottom: 0 !important;line-height: 29px;}
     .man-imgs {height: 92% !important;}
     .collection h1, p {margin-top: 50px;}
+    .collection h1 {
+        margin-top: 0 !important;
+    }
     footer p {line-height: 20px;}
     footer h2 {padding-bottom: 20px;}
     .design-back {display: none;}
-    .input-group {padding: 0 90px;}
+    .input-group {padding: 0 11px;}
     .nav-icons-img {display: none;}
     .navbar-nav {display: flex;flex-direction: column;padding-left: 0;margin-bottom: 0;list-style: none;justify-content: start;align-items: start;margin-left: 25px;}
     .carousel-cell:before {line-height: 0 !important;}
+    .all-button, .men-button, .woman-button, .top-up-button {
+        background-color: transparent !important;
+        color: #343b5e !important;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    .design {
+        position: relative;
+        padding: 46px 0;
+    }
+    .collection-cards {
+        display: flex;
+        justify-content: center;
+    }
+    .signup-heading {
+        font-size: 3rem;
+        padding-top: 50px;
+    }
+    .input-field {
+        padding-top: 15px;
+    }
+    footer {
+        padding: 15px 0 15px 0;
+    }
+    .footer-text {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-line {
+        text-align: center;
+    }
+    .girl-img {
+    position: relative;
+    bottom: -8px !important;
+    width: 70%;
+    right: -39px;
+    }
+    .banner-side-img {
+        display: none;
+    }
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
     .back-image {display: none;}
-    .middle-section button {margin-top: 0px;padding: 3px 30px !important;margin-bottom: 7px;margin-top: 37px; color: #343b5e !important;}
+    .middle-section button {margin-top: 0px;padding: 1px 0 1px 40px !important;margin-bottom: 7px;margin-top: 37px; color: #343b5e !important;}
     .banner-right {padding-top: 0 !important;}
     .mono-imgs {width: 100%;margin: 0;padding: 0;}
     .navbar-brand {width: 50%;}
     .outer-image {display: none !important;}
     .collection img {max-width: 100%;}
-    .collection-cards button {position: relative;top: -47px;bottom: 0;left: 106px;right: 0;padding: 1px 21px !important;}
+    .collection-cards button {position: relative;top: -47px;bottom: 0;left: 95px;right: 0;padding: 1px 0 1px 40px !important;}
     .men-section, .women-section {margin-left: 31px;background: url(./images/background-text.png) no-repeat;width: 90%;z-index: 99;position: relative;background-size: contain;}
-    .view-all {padding: 20px 0 0 0;color: #99cc34 !important;position: relative;}
+    .view-all {padding: 0 0 0 0;color: #99cc34 !important;position: relative;}
     .center-nav {margin-left: 0 !important;}
     .nav-item a {margin-left: 0px !important;}
     .banner-right h1 {font-size: 35px;}
@@ -460,7 +521,7 @@ body { font-family: sans-serif; }
     .products-container h6 {font-family: 'Quicksand', sans-serif;font-weight: 700;color: #e19500;padding-bottom: 5px;padding-top: 18px;}
     .design {position: relative;padding: 36px 0;}
     .design-background {background: url(./images/background-text.png) no-repeat;width: 92%;z-index: 99;position: relative;padding-top: 12px;background-size: contain;}
-    .design-background button {margin-bottom: 19px; margin-top: 20px; padding: 2px 23px;}
+    .design-background button {margin-bottom: 19px; margin-top: 20px; padding: 1px 0 1px 40px;}
     .signup {padding: 40px 0;}
     .signup-heading {font-size: 2.2rem;padding-top: 30px;}
     footer {padding: 25px 0 15px 0;}
